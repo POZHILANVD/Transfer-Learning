@@ -21,8 +21,6 @@ Evaluate the model on the testing dataset to measure accuracy and performance.
 ### STEP 5:
 Make predictions on new data using the trained model.
 ## PROGRAM
-Include your code here
-```python
 # Load Pretrained Model and Modify for Transfer Learning
 ```
 model = models.vgg19(pretrained=True)
@@ -87,7 +85,7 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
     plt.legend()
     plt.show()
 ```
-```
+
 
 ## OUTPUT
 ### Training Loss, Validation Loss Vs Iteration Plot
