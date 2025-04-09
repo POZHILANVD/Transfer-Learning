@@ -21,22 +21,22 @@ Evaluate the model on the testing dataset to measure accuracy and performance.
 ### STEP 5:
 Make predictions on new data using the trained model.
 ## PROGRAM
-# Load Pretrained Model and Modify for Transfer Learning
 ```
+# Load Pretrained Model and Modify for Transfer Learning
 model = models.vgg19(pretrained=True)
 ```
-# Modify the final fully connected layer to match the dataset classes
 ```
+# Modify the final fully connected layer to match the dataset classes
 num_classes = len(train_dataset.classes)
 model.classifier[6] = nn.Linear(4096, num_classes)
 ```
-# Include the Loss function and optimizer
 ```
+# Include the Loss function and optimizer
 criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 ```
-# Train the model
 ```
+# Train the model
 ## Step 3: Train the Model
 def train_model(model, train_loader,test_loader,num_epochs=10):
     train_losses = []
@@ -89,29 +89,19 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
 
 ## OUTPUT
 ### Training Loss, Validation Loss Vs Iteration Plot
-Include your plot here
-</br>
-</br>
-</br>
+![image](https://github.com/user-attachments/assets/7ac9f530-557f-4192-9a4f-93da80d8c143)
 
 ### Confusion Matrix
-Include confusion matrix here
-</br>
-</br>
-</br>
+![image](https://github.com/user-attachments/assets/63c07ee3-96f8-439c-af76-3f3811a964c8)
 
 ### Classification Report
-Include Classification Report here
-</br>
-</br>
-</br>
+![image](https://github.com/user-attachments/assets/fb35a371-5d91-475c-bc70-f9ea76ca3f06)
 
 ### New Sample Prediction
-</br>
-</br>
-</br>
+![image](https://github.com/user-attachments/assets/de770b1a-695e-490b-b004-348fcc327cbe)
+
+![image](https://github.com/user-attachments/assets/ca202328-198f-4376-bfb6-71acefd03946)
 
 ## RESULT
-</br>
-</br>
-</br>
+Thus, the Transfer Learning for classification using the VGG-19 architecture has been successfully implemented.
+
