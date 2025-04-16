@@ -3,8 +3,13 @@
 To Implement Transfer Learning for classification using VGG-19 architecture.
 
 ## Problem Statement and Dataset
+
 Develop an image classification model using transfer learning with the pre-trained VGG19 model.
 
+1. Develop a binary classification model using a pretrained VGG19 to distinguish between defected and non-defected capacitors by modifying the last layer to a single neuron.
+2. Train the model on a dataset containing images of various defected and non-defected capacitors to improve defect detection accuracy.
+3. Optimize and evaluate the model to ensure reliable classification for capacitor quality assessment in manufacturing.
+   
 ## DESIGN STEPS
 ### STEP 1:
 Import required libraries, load the dataset, and define training & testing datasets.
